@@ -142,35 +142,37 @@ Requires **Python 3.12+**. Runtime dependencies (PySide6, pyqtgraph,
 pyserial, numpy, scipy) are listed in `requirements.txt`; test tooling
 (pytest and plugins) in `requirements-dev.txt`.
 
+Installing into a virtual environment is recommended — the runtime
+dependencies are large.
+
 1. Install dependencies:
    ```
-   py -m pip install -r requirements.txt
+   python -m pip install -r requirements.txt
    ```
    For development/testing:
    ```
-   py -m pip install -r requirements-dev.txt
+   python -m pip install -r requirements-dev.txt
    ```
 2. Run the app:
    ```
-   py -m app.main
+   python -m app.main
    ```
 
 ## Tests
 
 ```bash
-cd lm19_app
-py -m pytest tests/ -v
+python -m pytest tests/ -v
 ```
 
 Smoke tests (fast critical-path subset):
 ```bash
-py -m pytest tests/ -v -m smoke
+python -m pytest tests/ -v -m smoke
 ```
 
 ## Project Structure
 
 ```
-lm19_app/
+.
 ├── app/                  # UI layer (PySide6) — tabs, dialogs, workers, plotting
 ├── lm19/                 # core logic (no Qt) — scan, models, amplifier, optimizer, I/O
 ├── config/               # JSON configs + LTspice templates
@@ -207,12 +209,12 @@ Saved as JSON files in `measurements/<lamp_type>/<lamp_id>__<timestamp>__<name>.
 Health measurements are saved separately in `health_measurements/<lamp_type>/`.
 
 These roots are configurable via `config/app.json`:
-- `measurements_dir` — defaults to `"measurements"` (relative to `lm19_app/`)
+- `measurements_dir` — defaults to `"measurements"` (relative to the application root)
 - `health_measurements_dir` — defaults to `"health_measurements"`
 - `health_refs_dir` — defaults to `"config/health_refs"`; holds the Tube Health
   reference set (`type/` and `personal/` subtrees)
 
-Absolute paths are used as-is; relative paths resolve against `lm19_app/`. The directory is auto-created on first use with a one-shot WARNING in the log.
+Absolute paths are used as-is; relative paths resolve against the application root. The directory is auto-created on first use with a one-shot WARNING in the log.
 
 ## Documentation
 
@@ -246,7 +248,7 @@ The remaining files in `docs/` are internal development documents (plans, audits
 - `tools/revise_lamp_params_from_tdsl.py` — nominal operating point revision using TDSL Application Data
 - `tools/parse_tubelib.py` — parses TubeLib.inc SPICE library into structured data
 - `tools/compare_models.py` — compares the production tube fitters (Koren, Dempwolf, Reefman — the latter picks the better of Derk/DerkE) against measured data. Run without args to list available tube types; pass type names to filter, or `--all` to process every type
-- `tools/fit_benchmark.py` — benchmarks the three fitters on all converted test datasets (`py tools/fit_benchmark.py [filter] [--real] [--no-ref]`)
+- `tools/fit_benchmark.py` — benchmarks the three fitters on all converted test datasets (`python tools/fit_benchmark.py [filter] [--real] [--no-ref]`)
 - `tools/optimizer_benchmark.py` — wall-clock benchmark of the amplifier optimizer hot paths
 - `tools/bench_optimizer_hd_methods.py` — speed vs physics comparison of HD methods (5point/chebyshev/auto/dft) on real pentode data
 - `tools/refine_efficiency.py` — measures adaptive-refine point savings vs approximation error on synthetic pentode scans

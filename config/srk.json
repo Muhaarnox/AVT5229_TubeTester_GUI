@@ -1,0 +1,10 @@
+{
+  "samples": 5,
+  "settle_s": 1.0,
+  "verify_retries": 3,
+  "ua_tolerance": 1.0,
+  "ug2_tolerance": 1.0,
+  "settle_per_volt_s": 0.5,
+  "settle_base_s": 1.0,
+  "ug1_step": 0.04
+}

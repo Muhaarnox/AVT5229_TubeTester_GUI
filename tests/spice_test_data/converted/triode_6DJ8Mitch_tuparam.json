@@ -1,0 +1,69 @@
+{
+  "_comment": "6DJ8 triode test data from Norman Koren's Tuparam (Tom Mitchell)",
+  "tube_type": "6DJ8",
+  "topology": "triode",
+  "source": "Koren Tuparam / Tom Mitchell",
+  "url": "https://www.normankoren.com/Audio/Tube_params.html",
+  "published_params": {
+    "mu": 28,
+    "ex": 1.3,
+    "kg1": 330,
+    "kp": 320,
+    "kvb": 300,
+    "_note": "Koren tube.lib published values"
+  },
+  "initial_guess": {
+    "vct": 0.5,
+    "_note": "Initial values from .m file (used as seed for optimizer)"
+  },
+  "points": [
+    {
+      "ua": 15.0,
+      "ug1": 0.0,
+      "ia": 3.5
+    },
+    {
+      "ua": 70.0,
+      "ug1": 0.0,
+      "ia": 19.6
+    },
+    {
+      "ua": 40.0,
+      "ug1": -1.0,
+      "ia": 3.46
+    },
+    {
+      "ua": 90.0,
+      "ug1": -1.0,
+      "ia": 17.8
+    },
+    {
+      "ua": 75.0,
+      "ug1": -2.0,
+      "ia": 4.2
+    },
+    {
+      "ua": 120.0,
+      "ug1": -2.0,
+      "ia": 19.5
+    },
+    {
+      "ua": 100.0,
+      "ug1": -3.5,
+      "ia": 1.42
+    },
+    {
+      "ua": 150.0,
+      "ug1": -3.5,
+      "ia": 12.3
+    }
+  ],
+  "_units": {
+    "ua": "V",
+    "ug1": "V (negative)",
+    "ia": "mA"
+  },
+  "_notes": [
+    "Contact potential VCT = 0.5V applied to Vg in model equations."
+  ]
+}

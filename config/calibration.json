@@ -1,0 +1,93 @@
+{
+  "version": 2,
+  "meter_accuracy_pct": {
+    "ua": 0.5,
+    "ug1": 0.5,
+    "ug2": 0.5,
+    "uh": 0.5,
+    "ih": 1.0,
+    "ia_low": 1.0,
+    "ia_high": 1.0,
+    "ig2": 1.0
+  },
+  "channels": {
+    "ua_read": {
+      "gain": 1.0,
+      "offset": 0.0,
+      "calibrated_at": null,
+      "quality": null
+    },
+    "ug1_read": {
+      "gain": 1.0,
+      "offset": 0.0,
+      "calibrated_at": null,
+      "quality": null
+    },
+    "ug2_read": {
+      "gain": 1.0,
+      "offset": 0.0,
+      "calibrated_at": null,
+      "quality": null
+    },
+    "uh_read": {
+      "gain": 1.0,
+      "offset": 0.0,
+      "calibrated_at": null,
+      "quality": null
+    },
+    "ih_read": {
+      "gain": 1.0,
+      "offset": 0.0,
+      "calibrated_at": null,
+      "quality": null
+    },
+    "ia_low_read": {
+      "gain": 1.0,
+      "offset": 0.0,
+      "calibrated_at": null,
+      "quality": null
+    },
+    "ia_high_read": {
+      "gain": 1.0,
+      "offset": 0.0,
+      "calibrated_at": null,
+      "quality": null
+    },
+    "ig2_read": {
+      "gain": 1.0,
+      "offset": 0.0,
+      "calibrated_at": null,
+      "quality": null
+    },
+    "ua_set": {
+      "gain": 1.0,
+      "offset": 0.0,
+      "calibrated_at": null,
+      "quality": null
+    },
+    "ug1_set": {
+      "gain": 1.0,
+      "offset": 0.0,
+      "calibrated_at": null,
+      "quality": null
+    },
+    "ug2_set": {
+      "gain": 1.0,
+      "offset": 0.0,
+      "calibrated_at": null,
+      "quality": null
+    },
+    "uh_set": {
+      "gain": 1.0,
+      "offset": 0.0,
+      "calibrated_at": null,
+      "quality": null
+    },
+    "ih_set": {
+      "gain": 1.0,
+      "offset": 0.0,
+      "calibrated_at": null,
+      "quality": null
+    }
+  }
+}

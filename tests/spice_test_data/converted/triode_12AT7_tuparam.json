@@ -1,0 +1,66 @@
+{
+  "_comment": "12AT7 triode test data from Norman Koren's Tuparam (Tom Mitchell)",
+  "tube_type": "12AT7",
+  "topology": "triode",
+  "source": "Koren Tuparam / Tom Mitchell",
+  "url": "https://www.normankoren.com/Audio/Tube_params.html",
+  "published_params": {
+    "mu": 60,
+    "ex": 1.35,
+    "kg1": 460,
+    "kp": 300,
+    "kvb": 300,
+    "_note": "Koren tube.lib published values"
+  },
+  "initial_guess": {
+    "mu": 60.0,
+    "_note": "Initial values from .m file (used as seed for optimizer)"
+  },
+  "points": [
+    {
+      "ua": 60.0,
+      "ug1": 0.0,
+      "ia": 3.98
+    },
+    {
+      "ua": 160.0,
+      "ug1": 0.0,
+      "ia": 15.7
+    },
+    {
+      "ua": 140.0,
+      "ug1": -2.0,
+      "ia": 1.94
+    },
+    {
+      "ua": 240.0,
+      "ug1": -2.0,
+      "ia": 10.2
+    },
+    {
+      "ua": 200.0,
+      "ug1": -4.0,
+      "ia": 1.18
+    },
+    {
+      "ua": 300.0,
+      "ug1": -4.0,
+      "ia": 6.49
+    },
+    {
+      "ua": 280.0,
+      "ug1": -6.0,
+      "ia": 0.945
+    },
+    {
+      "ua": 360.0,
+      "ug1": -6.0,
+      "ia": 3.7
+    }
+  ],
+  "_units": {
+    "ua": "V",
+    "ug1": "V (negative)",
+    "ia": "mA"
+  }
+}

@@ -1,0 +1,44 @@
+# Editor-side mirror of tests/test_code_quality.py::TestLineEndings.
+#
+# Authored text is LF with a final newline. Formats whose bytes belong to a
+# third party, to a spreadsheet importer or to an EDA toolchain are left
+# untouched: their content is the fixture, and rewriting it would be a
+# whole-file diff with no reader.
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = false
+
+[*.py]
+indent_style = space
+indent_size = 4
+
+[*.{json,md}]
+indent_style = space
+indent_size = 2
+
+# RFC 4180 and spreadsheet importers expect CRLF, and the csv module emits
+# it — exports must not be normalized.
+[*.csv]
+end_of_line = crlf
+insert_final_newline = unset
+
+# EDA / SPICE / firmware formats: bytes as received.
+[*.{etd,m,mdc,sch,slb,scv,lib,net,out,als,prb,ckt,wri,cir,inc,asc,asy,sub,hex,eep,c,h}]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+
+# Downloaded originals and third-party sample data.
+[lm19_app/tests/spice_test_data/raw/**]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+
+[lm19_app/external_sources/{theory,spice_models,lamp_datasheets,optimization,data}/**]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset

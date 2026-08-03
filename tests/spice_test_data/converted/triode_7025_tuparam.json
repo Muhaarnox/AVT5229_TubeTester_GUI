@@ -1,0 +1,87 @@
+{
+  "_comment": "7025 triode test data from Norman Koren's Tuparam (Sylvania Technical Manual)",
+  "tube_type": "7025",
+  "topology": "triode",
+  "source": "Koren Tuparam / Sylvania Technical Manual",
+  "url": "https://www.normankoren.com/Audio/Tube_params.html",
+  "aliases": [
+    "12AX7"
+  ],
+  "expected_params": {
+    "mu": 103.44,
+    "ex": 1.245,
+    "kg1": 1515.4,
+    "kp": 903.23,
+    "kvb": 99.2,
+    "vct": 0.5,
+    "_note": "Tuparam fit result — has contact potential VCT=0.5V"
+  },
+  "published_params": {
+    "mu": 100,
+    "ex": 1.4,
+    "kg1": 1060,
+    "kp": 600,
+    "kvb": 300,
+    "_note": "Koren tube.lib published values"
+  },
+  "initial_guess": {
+    "mu": 100.0,
+    "vct": 0.5,
+    "_note": "Initial values from .m file (used as seed for optimizer)"
+  },
+  "points": [
+    {
+      "ua": 10.0,
+      "ug1": 0.0,
+      "ia": 0.49
+    },
+    {
+      "ua": 100.0,
+      "ug1": 0.0,
+      "ia": 2.13
+    },
+    {
+      "ua": 100.0,
+      "ug1": -0.5,
+      "ia": 1.21
+    },
+    {
+      "ua": 200.0,
+      "ug1": -0.5,
+      "ia": 3.23
+    },
+    {
+      "ua": 150.0,
+      "ug1": -1.5,
+      "ia": 0.5
+    },
+    {
+      "ua": 250.0,
+      "ug1": -1.5,
+      "ia": 2.1
+    },
+    {
+      "ua": 260.0,
+      "ug1": -3.0,
+      "ia": 0.2
+    },
+    {
+      "ua": 350.0,
+      "ug1": -3.0,
+      "ia": 1.15
+    },
+    {
+      "ua": 400.0,
+      "ug1": -4.5,
+      "ia": 0.22
+    }
+  ],
+  "_units": {
+    "ua": "V",
+    "ug1": "V (negative)",
+    "ia": "mA"
+  },
+  "_notes": [
+    "Contact potential VCT = 0.5V applied to Vg in model equations."
+  ]
+}

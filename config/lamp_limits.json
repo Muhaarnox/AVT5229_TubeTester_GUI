@@ -1,0 +1,409 @@
+{
+  "_comment": "Datasheet-based tube limits (manual curation). Values are per tube section where applicable. ih_max in mA, uh_max in V.",
+  "limits": {
+    "6AC7": {
+      "Pa_max": 3.0,
+      "Pig2_max": 0.4,
+      "ua_max": 300.0,
+      "uh_max": 6.9,
+      "source": "Frank Pocnet https://frank.pocnet.net/sheets/127/6/6AC7.pdf (RCA datasheet)",
+      "ih_max": 500.0,
+      "ia_max": 25.0
+    },
+    "6AS7": {
+      "Pa_max": 13.0,
+      "ua_max": 250.0,
+      "ih_max": 2500.0,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=6AS7",
+      "uh_max": 6.9
+    },
+    "6F6S": {
+      "Pa_max": 11.0,
+      "Pig2_max": 2.75,
+      "ua_max": 315.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=6F6G",
+      "ih_max": 700.0
+    },
+    "6L6G": {
+      "Pa_max": 19.0,
+      "Pig2_max": 2.5,
+      "ua_max": 360.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=6L6G",
+      "ih_max": 900.0
+    },
+    "6N1P": {
+      "Pa_max": 2.2,
+      "ua_max": 300.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=ECC85",
+      "ih_max": 435.0
+    },
+    "6N2P": {
+      "Pa_max": 1.0,
+      "ua_max": 300.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=12AX7",
+      "ih_max": 300.0,
+      "ia_max": 8.0
+    },
+    "6N30P": {
+      "Pa_max": 4.8,
+      "ua_max": 300.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=6H30",
+      "ih_max": 900.0
+    },
+    "6N3P": {
+      "Pa_max": 1.5,
+      "ua_max": 300.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=2C51",
+      "ih_max": 300.0
+    },
+    "6N5S": {
+      "Pa_max": 13.0,
+      "ua_max": 250.0,
+      "ih_max": 2500.0,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=6AS7G",
+      "uh_max": 6.9
+    },
+    "6N6P": {
+      "Pa_max": 4.8,
+      "ua_max": 300.0,
+      "uh_max": 6.9,
+      "source": "Frank fallback https://frank.pocnet.net/sheets/124/6/6N6P.pdf"
+    },
+    "6N7S": {
+      "Pa_max": 3.5,
+      "ua_max": 300.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=6N7",
+      "ih_max": 800.0
+    },
+    "6P18P": {
+      "Pa_max": 12.5,
+      "Pig2_max": 2.5,
+      "ua_max": 250.0,
+      "ia_max": 75.0,
+      "uh_max": 6.9,
+      "ih_max": 820.0,
+      "Ra": 5.5,
+      "source": "manual user value (6P18P card)"
+    },
+    "6P1P": {
+      "Pa_max": 12.0,
+      "Pig2_max": 2.0,
+      "ua_max": 250.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=6AQ5",
+      "ih_max": 450.0
+    },
+    "6S19P": {
+      "Pa_max": 11.0,
+      "ua_max": 250.0,
+      "source": "Frank fallback https://frank.pocnet.net/sheets/113/6/6S19P.pdf"
+    },
+    "6S2S": {
+      "Pa_max": 2.5,
+      "ua_max": 300.0,
+      "uh_max": 6.9,
+      "source": "Frank fallback https://frank.pocnet.net/sheets/129/6/6S2S.pdf"
+    },
+    "6SC7": {
+      "Pa_max": 1.2,
+      "ua_max": 250.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=6SC7",
+      "ih_max": 300.0
+    },
+    "6SJ7": {
+      "Pa_max": 2.5,
+      "Pig2_max": 0.7,
+      "ua_max": 300.0,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=6SJ7",
+      "uh_max": 6.9,
+      "ih_max": 300.0
+    },
+    "6SL7": {
+      "Pa_max": 1.0,
+      "ua_max": 300.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=6SL7",
+      "ih_max": 300.0
+    },
+    "6SN7": {
+      "Pa_max": 2.5,
+      "ua_max": 450.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=6SN7",
+      "ih_max": 600.0
+    },
+    "6V6S": {
+      "Pa_max": 14.0,
+      "Pig2_max": 2.2,
+      "ua_max": 350.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=6V6GT",
+      "ih_max": 450.0,
+      "ia_max": 40.0
+    },
+    "E180CC": {
+      "Pa_max": 2.0,
+      "ua_max": 275.0,
+      "uh_max": 13.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=E180CC",
+      "ih_max": 400.0,
+      "ia_max": 20.0
+    },
+    "E182CC": {
+      "Pa_max": 4.5,
+      "ua_max": 300.0,
+      "uh_max": 13.9,
+      "source": "Frank fallback https://frank.pocnet.net/sheets/129/e/E182CC.pdf"
+    },
+    "ECC35": {
+      "Pa_max": 1.0,
+      "ua_max": 300.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=6SL7",
+      "ih_max": 300.0
+    },
+    "ECC40": {
+      "Pa_max": 2.5,
+      "ua_max": 300.0,
+      "uh_max": 6.9,
+      "source": "Frank fallback https://frank.pocnet.net/sheets/030/e/ECC40.pdf"
+    },
+    "ECC801": {
+      "Pa_max": 2.5,
+      "ua_max": 300.0,
+      "uh_max": 13.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=ECC801",
+      "ih_max": 300.0,
+      "ia_max": 15.0
+    },
+    "ECC802": {
+      "Pa_max": 2.75,
+      "ua_max": 300.0,
+      "uh_max": 13.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=12AU7",
+      "ih_max": 300.0,
+      "ia_max": 20.0
+    },
+    "ECC803": {
+      "Pa_max": 1.0,
+      "ua_max": 300.0,
+      "uh_max": 13.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=12AX7",
+      "ih_max": 300.0,
+      "ia_max": 8.0
+    },
+    "ECC81": {
+      "Pa_max": 2.5,
+      "ua_max": 300.0,
+      "uh_max": 13.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=ECC81",
+      "ih_max": 300.0,
+      "ia_max": 15.0
+    },
+    "ECC82": {
+      "Pa_max": 2.75,
+      "ua_max": 300.0,
+      "uh_max": 13.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=ECC82",
+      "ih_max": 300.0,
+      "ia_max": 20.0
+    },
+    "ECC83": {
+      "Pa_max": 1.0,
+      "ua_max": 300.0,
+      "uh_max": 13.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=ECC83",
+      "ih_max": 300.0,
+      "ia_max": 8.0
+    },
+    "ECC832_1": {
+      "Pa_max": 2.5,
+      "ua_max": 300.0,
+      "uh_max": 13.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=12AT7",
+      "ih_max": 300.0,
+      "ia_max": 15.0
+    },
+    "ECC832_2": {
+      "Pa_max": 2.75,
+      "ua_max": 300.0,
+      "uh_max": 13.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=12AU7",
+      "ih_max": 300.0,
+      "ia_max": 20.0
+    },
+    "ECC85": {
+      "Pa_max": 2.5,
+      "ua_max": 300.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=ECC85",
+      "ih_max": 435.0
+    },
+    "ECC88": {
+      "Pa_max": 1.8,
+      "ua_max": 130.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=ECC88",
+      "ih_max": 365.0
+    },
+    "ECC91": {
+      "Pa_max": 1.5,
+      "ua_max": 300.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=6J6",
+      "ih_max": 450.0
+    },
+    "ECC99": {
+      "Pa_max": 5.0,
+      "ua_max": 400.0,
+      "uh_max": 13.9,
+      "source": "JJ fallback https://www.jj-electronic.com/images/stories/productinfo/ECC99.pdf"
+    },
+    "ECL82P": {
+      "Pa_max": 7.0,
+      "Pig2_max": 1.7,
+      "ua_max": 300.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=ECL82",
+      "ih_max": 780.0
+    },
+    "ECL82T": {
+      "Pa_max": 1.5,
+      "ua_max": 250.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=ECL82",
+      "ih_max": 780.0
+    },
+    "ECL86P": {
+      "Pa_max": 9.0,
+      "Pig2_max": 2.0,
+      "ua_max": 300.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=ECL86",
+      "ih_max": 660.0
+    },
+    "ECL86T": {
+      "Pa_max": 1.0,
+      "ua_max": 300.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=ECL86",
+      "ih_max": 660.0
+    },
+    "EF86": {
+      "Pa_max": 1.0,
+      "Pig2_max": 0.2,
+      "ua_max": 300.0,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=EF86",
+      "uh_max": 6.9,
+      "ih_max": 200.0,
+      "ia_max": 6.0
+    },
+    "EL34": {
+      "Pa_max": 25.0,
+      "Pig2_max": 8.0,
+      "ua_max": 800.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=EL34",
+      "ih_max": 1500.0,
+      "ia_max": 150.0
+    },
+    "EL84": {
+      "Pa_max": 12.0,
+      "Pig2_max": 2.0,
+      "ua_max": 300.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=EL84",
+      "ih_max": 760.0,
+      "ia_max": 65.0
+    },
+    "EL90": {
+      "Pa_max": 12.0,
+      "Pig2_max": 2.0,
+      "ua_max": 275.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=6AQ5",
+      "ih_max": 450.0
+    },
+    "EL95": {
+      "Pa_max": 7.0,
+      "Pig2_max": 1.5,
+      "ua_max": 250.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=6DL5",
+      "ih_max": 200.0
+    },
+    "ForFutUse": {
+      "source": "placeholder"
+    },
+    "KT66": {
+      "Pa_max": 25.0,
+      "Pig2_max": 3.5,
+      "ua_max": 500.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=KT66",
+      "ih_max": 1270.0
+    },
+    "KT77": {
+      "Pa_max": 25.0,
+      "Pig2_max": 8.0,
+      "ua_max": 800.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=EL34",
+      "ih_max": 1500.0,
+      "ia_max": 150.0
+    },
+    "KT88": {
+      "Pa_max": 42.0,
+      "Pig2_max": 8.0,
+      "ua_max": 800.0,
+      "uh_max": 6.9,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=KT88",
+      "ih_max": 1600.0,
+      "ia_max": 230.0
+    },
+    "PCC84": {
+      "Pa_max": 1.5,
+      "ua_max": 220.0,
+      "uh_max": 7.7,
+      "ih_max": 300.0,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=PCC84"
+    },
+    "PCC85": {
+      "Pa_max": 2.5,
+      "ua_max": 220.0,
+      "uh_max": 9.9,
+      "ih_max": 300.0,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=PCC85"
+    },
+    "PCC88": {
+      "Pa_max": 1.8,
+      "ua_max": 220.0,
+      "uh_max": 8.4,
+      "ih_max": 300.0,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=PCC88"
+    },
+    "PCL86P": {
+      "Pa_max": 9.0,
+      "Pig2_max": 2.0,
+      "ua_max": 300.0,
+      "ih_max": 300.0,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=PCL86",
+      "uh_max": 14.6
+    },
+    "PCL86T": {
+      "Pa_max": 1.0,
+      "ua_max": 300.0,
+      "ih_max": 300.0,
+      "source": "TDSL https://tdsl.duncanamps.com/show.php?des=PCL86",
+      "uh_max": 14.6
+    }
+  }
+}

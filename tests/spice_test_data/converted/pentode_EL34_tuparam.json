@@ -1,0 +1,101 @@
+{
+  "_comment": "EL34 pentode test data from Norman Koren's Tuparam (Svetlana web page)",
+  "tube_type": "EL34",
+  "topology": "pentode",
+  "source": "Koren Tuparam / Svetlana web page",
+  "url": "https://www.normankoren.com/Audio/Tube_params.html",
+  "published_params": {
+    "mu": 11.0,
+    "ex": 1.35,
+    "kg1": 650,
+    "kg2": 4200,
+    "kp": 60,
+    "kvb": 24,
+    "_note": "Koren tube.lib published values"
+  },
+  "points": [
+    {
+      "ua": 60.0,
+      "ug1": 0.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 253.0
+    },
+    {
+      "ua": 200.0,
+      "ug1": 0.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 287.0
+    },
+    {
+      "ua": 100.0,
+      "ug1": -5.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 185.0
+    },
+    {
+      "ua": 300.0,
+      "ug1": -5.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 222.0
+    },
+    {
+      "ua": 300.0,
+      "ug1": -20.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 41.0
+    },
+    {
+      "ua": 500.0,
+      "ug1": -20.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 48.0
+    },
+    {
+      "ua": 500.0,
+      "ug1": -30.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 5.0
+    },
+    {
+      "ua": 250.0,
+      "ug1": -30.0,
+      "ug2": 300.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 18.0
+    },
+    {
+      "ua": 250.0,
+      "ug1": -20.0,
+      "ug2": 300.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 83.0
+    }
+  ],
+  "_units": {
+    "ua": "V",
+    "ug1": "V (negative)",
+    "ia": "mA",
+    "ug2": "V",
+    "ig2": "mA (null = not measured)"
+  },
+  "_notes": [
+    "Points at indices [7, 8] have non-primary Ug2 (different screen voltage).",
+    "Ig2 was not measured — Kg2 uses user-provided initial value."
+  ]
+}

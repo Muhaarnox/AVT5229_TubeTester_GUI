@@ -1,0 +1,20 @@
+Version 4
+SymbolType CELL
+RECTANGLE Normal -24 -32 24 32
+TEXT 0 0 Center 2 P
+WINDOW 0 32 -24 Left 2
+WINDOW 3 32 24 Left 2
+SYMATTR Prefix X
+SYMATTR Description Pentode tube model
+PIN 0 -64 TOP 8
+PINATTR PinName A
+PINATTR SpiceOrder 1
+PIN -48 0 LEFT 8
+PINATTR PinName G
+PINATTR SpiceOrder 2
+PIN 0 64 BOTTOM 8
+PINATTR PinName K
+PINATTR SpiceOrder 3
+PIN 48 0 RIGHT 8
+PINATTR PinName G2
+PINATTR SpiceOrder 4

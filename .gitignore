@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.venv/
+venv/
+
+# Runtime output
+logs/
+tmp/
+ltspice_runs/
+
+# User data and instrument-specific settings
+measurements/
+health_measurements/
+config/health_refs/

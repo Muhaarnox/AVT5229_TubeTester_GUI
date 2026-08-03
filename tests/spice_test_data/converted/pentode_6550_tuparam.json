@@ -1,0 +1,131 @@
+{
+  "_comment": "6550 pentode test data from Norman Koren's Tuparam (The Parts Connection (Tung-Sol))",
+  "tube_type": "6550",
+  "topology": "pentode",
+  "source": "Koren Tuparam / The Parts Connection (Tung-Sol)",
+  "url": "https://www.normankoren.com/Audio/Tube_params.html",
+  "expected_params": {
+    "mu": 8.45,
+    "ex": 1.247,
+    "kg1": 642.5,
+    "kp": 48.92,
+    "kg2": 4500,
+    "kvb": 20.9,
+    "vct": 0.0,
+    "_note": "Tuparam fit result. KG2 was NOT optimized — kept at 4500 (user-provided)."
+  },
+  "published_params": {
+    "mu": 7.9,
+    "ex": 1.35,
+    "kg1": 890,
+    "kg2": 4200,
+    "kp": 60,
+    "kvb": 24,
+    "_note": "Koren tube.lib published values"
+  },
+  "initial_guess": {
+    "mu": 10.0,
+    "_note": "Initial values from .m file (used as seed for optimizer)"
+  },
+  "points": [
+    {
+      "ua": 40.0,
+      "ug1": 0.0,
+      "ug2": 300.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 307.0
+    },
+    {
+      "ua": 100.0,
+      "ug1": 0.0,
+      "ug2": 300.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 405.0
+    },
+    {
+      "ua": 300.0,
+      "ug1": 0.0,
+      "ug2": 300.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 455.0
+    },
+    {
+      "ua": 100.0,
+      "ug1": -10.0,
+      "ug2": 300.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 231.0
+    },
+    {
+      "ua": 400.0,
+      "ug1": -10.0,
+      "ug2": 300.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 280.0
+    },
+    {
+      "ua": 300.0,
+      "ug1": -30.0,
+      "ug2": 300.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 59.0
+    },
+    {
+      "ua": 500.0,
+      "ug1": -30.0,
+      "ug2": 300.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 66.0
+    },
+    {
+      "ua": 500.0,
+      "ug1": -60.0,
+      "ug2": 500.0,
+      "ig2": null,
+      "_triode_connected": true,
+      "ia": 50.0
+    },
+    {
+      "ua": 100.0,
+      "ug1": 0.0,
+      "ug2": 100.0,
+      "ig2": null,
+      "_triode_connected": true,
+      "ia": 90.0
+    },
+    {
+      "ua": 180.0,
+      "ug1": 0.0,
+      "ug2": 180.0,
+      "ig2": null,
+      "_triode_connected": true,
+      "ia": 214.0
+    },
+    {
+      "ua": 350.0,
+      "ug1": -30.0,
+      "ug2": 350.0,
+      "ig2": null,
+      "_triode_connected": true,
+      "ia": 102.0
+    }
+  ],
+  "_units": {
+    "ua": "V",
+    "ug1": "V (negative)",
+    "ia": "mA",
+    "ug2": "V",
+    "ig2": "mA (null = not measured)"
+  },
+  "_notes": [
+    "Points at indices [7, 8, 9, 10] are triode-connected (Ug2 = Ua).",
+    "Ig2 was not measured — Kg2 uses user-provided initial value."
+  ]
+}

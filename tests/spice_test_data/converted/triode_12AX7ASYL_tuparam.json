@@ -1,0 +1,73 @@
+{
+  "_comment": "12AX7A triode test data from Norman Koren's Tuparam (Sylvania Technical Manual (6AV6))",
+  "tube_type": "12AX7A",
+  "topology": "triode",
+  "source": "Koren Tuparam / Sylvania Technical Manual (6AV6)",
+  "url": "https://www.normankoren.com/Audio/Tube_params.html",
+  "aliases": [
+    "12AX7"
+  ],
+  "published_params": {
+    "mu": 100,
+    "ex": 1.4,
+    "kg1": 1060,
+    "kp": 600,
+    "kvb": 300,
+    "_note": "Koren tube.lib published values"
+  },
+  "initial_guess": {
+    "mu": 100.0,
+    "vct": 0.5,
+    "_note": "Initial values from .m file (used as seed for optimizer)"
+  },
+  "points": [
+    {
+      "ua": 10.0,
+      "ug1": 0.0,
+      "ia": 0.3
+    },
+    {
+      "ua": 50.0,
+      "ug1": 0.0,
+      "ia": 1.2
+    },
+    {
+      "ua": 100.0,
+      "ug1": 0.0,
+      "ia": 2.12
+    },
+    {
+      "ua": 120.0,
+      "ug1": -1.0,
+      "ia": 0.75
+    },
+    {
+      "ua": 220.0,
+      "ug1": -1.0,
+      "ia": 2.5
+    },
+    {
+      "ua": 200.0,
+      "ug1": -2.0,
+      "ia": 0.56
+    },
+    {
+      "ua": 300.0,
+      "ug1": -2.0,
+      "ia": 2.1
+    },
+    {
+      "ua": 300.0,
+      "ug1": -3.0,
+      "ia": 0.6
+    }
+  ],
+  "_units": {
+    "ua": "V",
+    "ug1": "V (negative)",
+    "ia": "mA"
+  },
+  "_notes": [
+    "Contact potential VCT = 0.5V applied to Vg in model equations."
+  ]
+}

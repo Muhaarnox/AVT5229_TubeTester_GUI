@@ -1,0 +1,84 @@
+{
+  "_comment": "6550C pentode test data from Norman Koren's Tuparam (Svetlana web page)",
+  "tube_type": "6550C",
+  "topology": "pentode",
+  "source": "Koren Tuparam / Svetlana web page",
+  "url": "https://www.normankoren.com/Audio/Tube_params.html",
+  "aliases": [
+    "6550"
+  ],
+  "published_params": {
+    "mu": 7.9,
+    "ex": 1.35,
+    "kg1": 890,
+    "kg2": 4200,
+    "kp": 60,
+    "kvb": 24,
+    "_note": "Koren tube.lib published values"
+  },
+  "initial_guess": {
+    "kvb": 25.0,
+    "nopt": 4,
+    "_note": "Initial values from .m file (used as seed for optimizer)"
+  },
+  "points": [
+    {
+      "ua": 80.0,
+      "ug1": 0.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 322.0
+    },
+    {
+      "ua": 500.0,
+      "ug1": 0.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 370.0
+    },
+    {
+      "ua": 100.0,
+      "ug1": -10.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 195.0
+    },
+    {
+      "ua": 500.0,
+      "ug1": -10.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 224.0
+    },
+    {
+      "ua": 200.0,
+      "ug1": -25.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 57.0
+    },
+    {
+      "ua": 500.0,
+      "ug1": -25.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 62.0
+    }
+  ],
+  "_units": {
+    "ua": "V",
+    "ug1": "V (negative)",
+    "ia": "mA",
+    "ug2": "V",
+    "ig2": "mA (null = not measured)"
+  },
+  "_notes": [
+    "Ig2 was not measured — Kg2 uses user-provided initial value."
+  ]
+}

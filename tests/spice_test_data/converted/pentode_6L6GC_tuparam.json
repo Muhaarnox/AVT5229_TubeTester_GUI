@@ -1,0 +1,123 @@
+{
+  "_comment": "6L6GC pentode test data from Norman Koren's Tuparam (www.svetlana.com SV6L6GC)",
+  "tube_type": "6L6GC",
+  "topology": "pentode",
+  "source": "Koren Tuparam / www.svetlana.com SV6L6GC",
+  "url": "https://www.normankoren.com/Audio/Tube_params.html",
+  "published_params": {
+    "mu": 8.7,
+    "ex": 1.35,
+    "kg1": 1460,
+    "kg2": 4500,
+    "kp": 48,
+    "kvb": 12,
+    "_note": "Koren tube.lib published values"
+  },
+  "initial_guess": {
+    "mu": 10.0,
+    "kvb": 10.0,
+    "kp": 100.0,
+    "_note": "Initial values from .m file (used as seed for optimizer)"
+  },
+  "points": [
+    {
+      "ua": 30.0,
+      "ug1": 0.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 100.0
+    },
+    {
+      "ua": 150.0,
+      "ug1": 0.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 185.0
+    },
+    {
+      "ua": 150.0,
+      "ug1": -10.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 93.0
+    },
+    {
+      "ua": 300.0,
+      "ug1": -10.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 101.0
+    },
+    {
+      "ua": 250.0,
+      "ug1": -25.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 24.0
+    },
+    {
+      "ua": 400.0,
+      "ug1": -25.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 27.0
+    },
+    {
+      "ua": 450.0,
+      "ug1": -30.0,
+      "ug2": 250.0,
+      "ig2": null,
+      "_triode_connected": false,
+      "ia": 15.0
+    },
+    {
+      "ua": 100.0,
+      "ug1": 0.0,
+      "ug2": 100.0,
+      "ig2": null,
+      "_triode_connected": true,
+      "ia": 58.0
+    },
+    {
+      "ua": 300.0,
+      "ug1": -20.0,
+      "ug2": 300.0,
+      "ig2": null,
+      "_triode_connected": true,
+      "ia": 80.0
+    },
+    {
+      "ua": 400.0,
+      "ug1": -40.0,
+      "ug2": 400.0,
+      "ig2": null,
+      "_triode_connected": true,
+      "ia": 48.0
+    },
+    {
+      "ua": 500.0,
+      "ug1": -70.0,
+      "ug2": 500.0,
+      "ig2": null,
+      "_triode_connected": true,
+      "ia": 11.0
+    }
+  ],
+  "_units": {
+    "ua": "V",
+    "ug1": "V (negative)",
+    "ia": "mA",
+    "ug2": "V",
+    "ig2": "mA (null = not measured)"
+  },
+  "_notes": [
+    "Points at indices [7, 8, 9, 10] are triode-connected (Ug2 = Ua).",
+    "Ig2 was not measured — Kg2 uses user-provided initial value."
+  ]
+}

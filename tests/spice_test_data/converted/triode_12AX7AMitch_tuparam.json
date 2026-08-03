@@ -1,0 +1,68 @@
+{
+  "_comment": "12AX7A triode test data from Norman Koren's Tuparam (Tom Mitchell)",
+  "tube_type": "12AX7A",
+  "topology": "triode",
+  "source": "Koren Tuparam / Tom Mitchell",
+  "url": "https://www.normankoren.com/Audio/Tube_params.html",
+  "aliases": [
+    "12AX7"
+  ],
+  "expected_params": {
+    "mu": 101.24,
+    "ex": 1.267,
+    "kg1": 1002.9,
+    "kp": 699.73,
+    "kvb": 300.0,
+    "vct": 0.0,
+    "_note": "Tuparam fit result"
+  },
+  "published_params": {
+    "mu": 100,
+    "ex": 1.4,
+    "kg1": 1060,
+    "kp": 600,
+    "kvb": 300,
+    "_note": "Koren tube.lib published values"
+  },
+  "initial_guess": {
+    "mu": 100.0,
+    "_note": "Initial values from .m file (used as seed for optimizer)"
+  },
+  "points": [
+    {
+      "ua": 100.0,
+      "ug1": 0.0,
+      "ia": 1.94
+    },
+    {
+      "ua": 250.0,
+      "ug1": 0.0,
+      "ia": 6.52
+    },
+    {
+      "ua": 200.0,
+      "ug1": -1.5,
+      "ia": 0.91
+    },
+    {
+      "ua": 300.0,
+      "ug1": -1.5,
+      "ia": 3.18
+    },
+    {
+      "ua": 300.0,
+      "ug1": -3.0,
+      "ia": 0.4
+    },
+    {
+      "ua": 360.0,
+      "ug1": -3.0,
+      "ia": 1.28
+    }
+  ],
+  "_units": {
+    "ua": "V",
+    "ug1": "V (negative)",
+    "ia": "mA"
+  }
+}

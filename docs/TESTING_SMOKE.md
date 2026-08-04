@@ -6,7 +6,7 @@ This project uses `pytest` markers to keep critical-path checks fast and focused
 
 Run all smoke tests:
 
-`py -m pytest -m smoke -q`
+`python -m pytest -m smoke -q`
 
 ## Smoke Categories
 
@@ -25,22 +25,22 @@ Each smoke test also has one category marker:
 
 Run one category:
 
-- `py -m pytest -m "smoke and smoke_ui" -q`
-- `py -m pytest -m "smoke and smoke_data" -q`
-- `py -m pytest -m "smoke and smoke_protocol" -q`
-- `py -m pytest -m "smoke and smoke_analysis" -q`
-- `py -m pytest -m "smoke and smoke_workers" -q`
-- `py -m pytest -m "smoke and smoke_spice" -q`
-- `py -m pytest -m "smoke and smoke_scan" -q`
-- `py -m pytest -m "smoke and smoke_config" -q`
+- `python -m pytest -m "smoke and smoke_ui" -q`
+- `python -m pytest -m "smoke and smoke_data" -q`
+- `python -m pytest -m "smoke and smoke_protocol" -q`
+- `python -m pytest -m "smoke and smoke_analysis" -q`
+- `python -m pytest -m "smoke and smoke_workers" -q`
+- `python -m pytest -m "smoke and smoke_spice" -q`
+- `python -m pytest -m "smoke and smoke_scan" -q`
+- `python -m pytest -m "smoke and smoke_config" -q`
 
 Run all smoke tests except one category:
 
-- `py -m pytest -m "smoke and not smoke_spice" -q`
+- `python -m pytest -m "smoke and not smoke_spice" -q`
 
 List collected smoke tests:
 
-- `py -m pytest -m smoke --collect-only -q`
+- `python -m pytest -m smoke --collect-only -q`
 
 ## Notable Tests
 
@@ -94,13 +94,13 @@ List collected smoke tests:
 Compare Koren / Dempwolf / Reefman accuracy across all test datasets.
 
 ```bash
-py tools/fit_benchmark.py                    # all datasets (89 as of 2026-08-01)
-py tools/fit_benchmark.py EL84               # filter by tube name
-py tools/fit_benchmark.py pentode            # filter by topology
-py tools/fit_benchmark.py 6S19P 6C33C        # multiple filters (OR)
-py tools/fit_benchmark.py --real             # only real measurements (*_real.json)
-py tools/fit_benchmark.py --no-ref           # disable reference params (fair comparison)
-py tools/fit_benchmark.py --real --no-ref    # combine flags
+python tools/fit_benchmark.py                    # all datasets (89 as of 2026-08-01)
+python tools/fit_benchmark.py EL84               # filter by tube name
+python tools/fit_benchmark.py pentode            # filter by topology
+python tools/fit_benchmark.py 6S19P 6C33C        # multiple filters (OR)
+python tools/fit_benchmark.py --real             # only real measurements (*_real.json)
+python tools/fit_benchmark.py --no-ref           # disable reference params (fair comparison)
+python tools/fit_benchmark.py --real --no-ref    # combine flags
 ```
 
 Output: table with RMS error per model, winner, Dempwolf/Koren ratio.
@@ -119,7 +119,7 @@ parity and Koren never wins. One dataset is an out-of-class outlier where every
 model fails (THF51 — emission saturation at multi-ampere currents); it is kept
 in the corpus on purpose, see `docs/DEMPWOLF_EXTENDED_MODEL.md` §10.8.
 
-### Model Compare (`py -m lm19.model_compare`)
+### Model Compare (`python -m lm19.model_compare`)
 
 Compare overlay model fitters on measurement files in `measurements/`.
 Outputs formatted table with rms_ia, max_ia, rms_ig2, rms_gm per model.
@@ -130,5 +130,5 @@ Exports model → runs LTspice batch → parses .raw → compares Ia with Python
 Requires LTspice at `C:\Program Files\ADI\LTspice\LTspice.exe`.
 
 ```bash
-py -m pytest tests/test_ltspice_roundtrip.py -v    # all 54 round-trip tests
+python -m pytest tests/test_ltspice_roundtrip.py -v    # all 54 round-trip tests
 ```

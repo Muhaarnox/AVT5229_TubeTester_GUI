@@ -467,7 +467,7 @@ fitter. The script now calls the production `lm19.reefman.fit_reefman`
 (phased fit, retry starts, adaptive bounds; it picks the better of D/DE
 itself and prints a single "Reefman (D|DE)" row) — on regeneration the
 table will reflect what the application user actually gets. The canonical
-benchmark across all datasets is `py tools/fit_benchmark.py`.
+benchmark across all datasets is `python tools/fit_benchmark.py`.
 
 ### Potential Implementation Candidates
 

@@ -3788,7 +3788,7 @@ class TestUltralinear:
             assert p["ua"] == pytest.approx(u["ua"], abs=0.1)
             assert p["ia"] == pytest.approx(u["ia"], abs=0.01)
 
-    # ── Distortion with UL ─────���─────────────────────────────────
+    # ── Distortion with UL ─────────────────────────────────────────
 
     def test_ul_distortion_computable(self):
         """5-point distortion works with UL-wrapped intersections."""
@@ -3849,7 +3849,7 @@ class TestUltralinear:
         # UL should give lower Zout than pentode (higher tap → more triode-like)
         assert stage_ul["zout"] < stage_pent["zout"]
 
-    # ── Sweep monotonicity: tap 0→100% ───��───────────────────────
+    # ── Sweep monotonicity: tap 0→100% ────────────────────────────
 
     def test_ul_zout_trend_with_tap(self):
         """Higher tap → overall lower Zout (pentode → triode direction).
@@ -3954,7 +3954,7 @@ class TestUltralinear:
         assert dist is not None
         assert dist["thd"] > 0
 
-    # ── Edge cases ─────────���─────────────────────────────────────
+    # ── Edge cases ─────────────────────────────────────────────────
 
     def test_wrapper_with_triode_model_raises_no_error(self):
         """Wrapping a triode model technically works (unusual but not forbidden)."""
@@ -4640,7 +4640,7 @@ class TestGmRaCrossValidation:
     """
 
     def test_gm_model_vs_numerical_12ax7(self):
-        """12AX7: model gm �� numerical gm at actual Q-point."""
+        """12AX7: model gm ≈ numerical gm at actual Q-point."""
         model, pts = quick_triode("12AX7")
         ll = ResistiveLoadLine(ub=250, ra=100.0)
         ug1_vals = sorted({round(p["ug1"], 1) for p in pts})

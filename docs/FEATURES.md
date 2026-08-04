@@ -11,7 +11,7 @@ in the LM19 tube tester application.
   - [2D — Ia(Ua)](#2d--iaua)
   - [Transfer — Ia(Ug1)](#transfer--iaug1)
   - [Contour — Ia(Ua, Ug1)](#contour--iaua-ug1)
-  - [Gm/Rp — Heatmaps](#gmrp--heatmaps)
+  - [Gm/Rp/µ — Heatmaps](#gmrpµ--heatmaps)
   - [Pa Map — Power Dissipation](#pa-map--power-dissipation)
   - [Curves — Universal Parameter Plot](#curves--universal-parameter-plot)
   - [Real-time Ia/Ig2](#real-time-iaig2)
@@ -831,7 +831,7 @@ Fitters use adaptive bounds based on estimated µ — low-mu power triodes
 (6S19P, 6C33C, µ < 8) get wider parameter ranges. Reefman requires ≥ 3 Ug2
 levels for reliable current splitting.
 
-Benchmark: `py tools/fit_benchmark.py [filter] [--real] [--no-ref]` —
+Benchmark: `python tools/fit_benchmark.py [filter] [--real] [--no-ref]` —
 compare all three fitters on 86+ test datasets.
 
 **Koren triode model** (5 parameters, 3-pin: A, G, K):

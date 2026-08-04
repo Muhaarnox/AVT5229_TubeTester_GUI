@@ -564,7 +564,7 @@ class TestMultiSourceE2E:
 
 # ═══════════════════════════════════════════════════════════════════
 #  Edge cases & error paths
-# ══════════════════════════════════════════════════════════���════════
+# ═════════════════════════════════════════════════════════════════════
 
 class TestEdgeCases:
     """Error handling and boundary conditions."""
@@ -1019,7 +1019,7 @@ class TestUltralinearEngine:
         # But the engine should at least not error
         assert r.error is None
 
-    # ── UL with SRK: stage params use SRK, not UL ───��──────────
+    # ── UL with SRK: stage params use SRK, not UL ───────────────
 
     def test_ul_stage_uses_model_not_srk(self):
         """Model source → stage uses model_gm_ra, even with SRK present.
